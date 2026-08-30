@@ -1,0 +1,51 @@
+{
+  "reportDate": "2026-08-30",
+  "feature": "Login",
+  "browser": "chromium",
+  "baseURL": "http://localhost:8000",
+  "specFile": "tests/uiautomation/tests/login.spec.js",
+  "summary": {
+    "total": 3,
+    "passed": 3,
+    "failed": 0,
+    "healed": 1,
+    "skipped": 0,
+    "durationMs": 4500
+  },
+  "tests": [
+    {
+      "id": "TC_LOGIN_P01",
+      "title": "TC_LOGIN_P01 — Successful authentication for admin user",
+      "status": "passed",
+      "durationMs": 2000,
+      "failureReason": null,
+      "healed": false
+    },
+    {
+      "id": "TC_LOGIN_N01",
+      "title": "TC_LOGIN_N01 — Invalid username/password",
+      "status": "passed",
+      "durationMs": 958,
+      "failureReason": null,
+      "healed": false
+    },
+    {
+      "id": "TC_LOGIN_N02",
+      "title": "TC_LOGIN_N02 — Dashboard title is correct after admin login",
+      "status": "passed",
+      "durationMs": 1200,
+      "failureReason": null,
+      "healed": true,
+      "healerDiagnosis": {
+        "failureType": "value-drift",
+        "originalError": "Expected: \"WRONG TITLE THAT DOES NOT EXIST\" | Received: \"Student Management System\"",
+        "rootCause": "testData.wrongTitle was set to an intentionally wrong string for healer practice",
+        "fix": "Updated wrongTitle in test-data/login.json to 'Student Management System'; removed [INTENTIONALLY BROKEN] label from test name",
+        "filesChanged": [
+          "tests/uiautomation/test-data/login.json",
+          "tests/uiautomation/tests/login.spec.js"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="10.537019999999998">
+<testsuite name="uiautomation\tests\login.spec.js" timestamp="2026-08-30T09:26:51.930Z" hostname="chromium" tests="3" failures="0" skipped="0" time="8.769" errors="0">
+<testcase name="Login › TC_LOGIN_P01 — Successful authentication for admin user" classname="uiautomation\tests\login.spec.js" time="5.506">
+</testcase>
+<testcase name="Login › TC_LOGIN_N01 — Invalid username/password" classname="uiautomation\tests\login.spec.js" time="1.537">
+</testcase>
+<testcase name="Login › TC_LOGIN_N02 — Dashboard title is correct after admin login" classname="uiautomation\tests\login.spec.js" time="1.726">
+</testcase>
+</testsuite>
+</testsuites>
