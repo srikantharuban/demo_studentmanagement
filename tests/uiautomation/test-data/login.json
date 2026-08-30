@@ -1,0 +1,9 @@
+{
+  "admin": { "username": "admin", "password": "admin123", "role": "admin", "label": "Administrator" },
+  "invalid": { "username": "wronguser", "password": "wrongpass" },
+  "expectedErrorText": "⚠ Invalid username or password. Please try again.",
+  "loginPageTitle": "Sign In — Student Management System",
+  "dashboardPageTitle": "Student Management System",
+  "dashboardUrl": "/ui/",
+  "wrongTitle": "Student Management System"
+}
